@@ -465,8 +465,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 .h-6 {
   height: 1.5rem;
 }
-.w-\[1900px\] {
-  width: 1900px;
+.w-\[1920px\] {
+  width: 1920px;
 }
 .w-1\/6 {
   width: 16.666667%;
@@ -529,6 +529,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-wave-pattern-dots {
   background-image: url(../img/pattern-white-dots.png);
 }
+.bg-pattern-characters-red {
+  background-image: url('../img/pattern-characters-red.png');
+}
 .bg-repeat-x {
   background-repeat: repeat-x;
 }
@@ -537,6 +540,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .p-4 {
   padding: 1rem;
+}
+.p-3 {
+  padding: 0.75rem;
 }
 .px-4 {
   padding-left: 1rem;
@@ -549,6 +555,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .px-16 {
   padding-left: 4rem;
   padding-right: 4rem;
+}
+.py-28 {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
 }
 .text-center {
   text-align: center;
@@ -602,8 +612,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 @media (min-width: 768px) {
 
+  .md\:flex {
+    display: flex;
+  }
+
   .md\:w-4\/6 {
     width: 66.666667%;
+  }
+
+  .md\:w-full {
+    width: 100%;
   }
 
   .md\:flex-row {
@@ -611,6 +629,52 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 @media (min-width: 1024px) {
+
+  .lg\:container {
+    width: 100%;
+  }
+
+  @media (min-width: 320px) {
+
+    .lg\:container {
+      max-width: 320px;
+    }
+  }
+
+  @media (min-width: 640px) {
+
+    .lg\:container {
+      max-width: 640px;
+    }
+  }
+
+  @media (min-width: 768px) {
+
+    .lg\:container {
+      max-width: 768px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+
+    .lg\:container {
+      max-width: 1024px;
+    }
+  }
+
+  @media (min-width: 1280px) {
+
+    .lg\:container {
+      max-width: 1280px;
+    }
+  }
+
+  @media (min-width: 1536px) {
+
+    .lg\:container {
+      max-width: 1536px;
+    }
+  }
 
   .lg\:block {
     display: block;
@@ -626,5 +690,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:justify-start {
     justify-content: flex-start;
+  }
+}
+@media (min-width: 320px) {
+
+  .xsm\:w-full {
+    width: 100%;
   }
 }
