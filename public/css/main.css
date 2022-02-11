@@ -439,6 +439,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .top-2 {
   top: 0.5rem;
 }
+.-top-3 {
+  top: -0.75rem;
+}
 .z-50 {
   z-index: 50;
 }
@@ -449,6 +452,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+.mt-72 {
+  margin-top: 18rem;
+}
+.mt-16 {
+  margin-top: 4rem;
 }
 .block {
   display: block;
@@ -465,6 +474,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .h-6 {
   height: 1.5rem;
 }
+.h-3 {
+  height: 0.75rem;
+}
 .w-\[1920px\] {
   width: 1920px;
 }
@@ -473,6 +485,15 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .w-full {
   width: 100%;
+}
+.w-5\/6 {
+  width: 83.333333%;
+}
+.w-4\/5 {
+  width: 80%;
+}
+.w-3 {
+  width: 0.75rem;
 }
 .flex-col {
   flex-direction: column;
@@ -492,11 +513,17 @@ Ensure the default browser behavior of the `hidden` attribute.
 .gap-3 {
   gap: 0.75rem;
 }
+.overflow-hidden {
+  overflow: hidden;
+}
 .rounded-full {
   border-radius: 9999px;
 }
 .rounded-3xl {
   border-radius: 1.5rem;
+}
+.rounded-2xl {
+  border-radius: 1rem;
 }
 .border-4 {
   border-width: 4px;
@@ -523,6 +550,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+.bg-blue-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(37 99 235 / var(--tw-bg-opacity));
+}
 .bg-wave-pattern {
   background-image: url(../img/wave-white.png);
 }
@@ -531,6 +566,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .bg-pattern-characters-red {
   background-image: url('../img/pattern-characters-red.png');
+}
+.bg-character-mario {
+  background-image: url('../img/character-l.png');
+}
+.bg-contain {
+  background-size: contain;
+}
+.bg-top {
+  background-position: top;
+}
+.bg-no-repeat {
+  background-repeat: no-repeat;
 }
 .bg-repeat-x {
   background-repeat: repeat-x;
@@ -560,6 +607,17 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-top: 7rem;
   padding-bottom: 7rem;
 }
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.pt-52 {
+  padding-top: 13rem;
+}
 .text-center {
   text-align: center;
 }
@@ -567,8 +625,23 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 1.5rem;
   line-height: 2rem;
 }
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
 .font-bold {
   font-weight: 700;
+}
+.font-black {
+  font-weight: 900;
 }
 .text-white {
   --tw-text-opacity: 1;
@@ -598,18 +671,98 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-text-opacity: 1;
   color: rgb(234 179 8 / var(--tw-text-opacity));
 }
+
+.dot {
+  height: 0.75rem;
+  width: 0.75rem;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(37 99 235 / var(--tw-bg-opacity));
+}
+
+.button {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+  border-radius: 1.5rem;
+  border-width: 8px;
+  border-color: transparent;
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  font-weight: 900;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
+}
+
+.button:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(229 231 235 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+@media (min-width: 1280px) {
+
+  .button {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+.arrow {
+  display: inline-block;
+  height: 1rem;
+  width: 1rem;
+  --tw-rotate: 45deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  border-top-width: 5px;
+  border-right-width: 5px;
+  border-style: solid;
+  --tw-border-opacity: 1;
+  border-color: rgb(253 224 71 / var(--tw-border-opacity));
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.group:hover .arrow {
+  --tw-border-opacity: 1;
+  border-color: rgb(239 68 68 / var(--tw-border-opacity));
+}
+
+@media (min-width: 1280px) {
+
+  .group:hover .arrow {
+    margin-left: 1rem;
+  }
+}
+
 .hover\:border-gray-200:hover {
   --tw-border-opacity: 1;
   border-color: rgb(229 231 235 / var(--tw-border-opacity));
 }
+
 .hover\:bg-white:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
+
 .hover\:text-black:hover {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
+
 @media (min-width: 768px) {
 
   .md\:flex {
@@ -624,10 +777,15 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 100%;
   }
 
+  .md\:w-1\/2 {
+    width: 50%;
+  }
+
   .md\:flex-row {
     flex-direction: row;
   }
 }
+
 @media (min-width: 1024px) {
 
   .lg\:container {
@@ -692,6 +850,21 @@ Ensure the default browser behavior of the `hidden` attribute.
     justify-content: flex-start;
   }
 }
+
+@media (min-width: 1280px) {
+
+  .xl\:w-4\/5 {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1536px) {
+
+  .\32xl\:w-5\/6 {
+    width: 83.333333%;
+  }
+}
+
 @media (min-width: 320px) {
 
   .xsm\:w-full {
