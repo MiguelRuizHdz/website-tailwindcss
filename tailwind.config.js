@@ -2,7 +2,6 @@ module.exports = {
     content: [
         './public/**/*.html'
     ],
-    // darkMode: false, // or 'media' or 'class'
     theme: {
         extend: {
             backgroundImage: theme => ({
@@ -10,9 +9,6 @@ module.exports = {
                 'wave-pattern-dots': 'url(../img/pattern-white-dots.png)'
             })
         },
-    },
-    variants: {
-        extend: {},
     },
     plugins: [],
 };
