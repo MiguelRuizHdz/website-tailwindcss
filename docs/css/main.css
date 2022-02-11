@@ -852,14 +852,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-duration: 150ms;
 }
 
-.group:hover .arrow {
+.group:hover .arrow-group {
   --tw-border-opacity: 1;
   border-color: rgb(239 68 68 / var(--tw-border-opacity));
 }
 
 @media (min-width: 1280px) {
 
-  .group:hover .arrow {
+  .group:hover .arrow-group {
     margin-left: 1rem;
   }
 }
